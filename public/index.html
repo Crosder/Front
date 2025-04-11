@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teacher Mafer Dashboard</title>
+    <meta name="theme-color" content="#0ff" />
+    <meta name="description" content="Painel de controle estilizado para Teacher Mafer" />
+
+    <!-- Fontes e animações -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-black text-white font-sans animate-fade-in">
+    <div id="root"></div>
+
+    <style>
+      body {
+        font-family: 'Orbitron', sans-serif;
+        background: radial-gradient(circle at center, #0ff 0%, #000 100%);
+        animation: fadeIn 2s ease-in-out forwards;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      ::selection {
+        background: #0ff;
+        color: #000;
+      }
+    </style>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
